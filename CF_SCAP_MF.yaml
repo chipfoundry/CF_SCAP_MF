@@ -1,0 +1,24 @@
+info:
+  name: CF_SCAP_MF
+  description: Switched-capacitor filter/gain (CF_SCAP_MF) is a ChipFoundry
+    hard-macro blackbox on SkyWater 130 nm.
+  repo: https://github.com/chipfoundry/CF_SCAP_MF
+  owner: ChipFoundry
+  license: proprietary
+  author: ChipFoundry
+  email: support@chipfoundry.io
+  version: 0.2.0
+  date: 9-6-2026
+  category: analog
+  tags:
+  - CF_SCAP_MF
+  bus: n/a
+  type: hard
+  maturity: Production
+  width: '362.35'
+  height: '138.875'
+  technology: sky130
+  digital_supply_voltage: n/a
+  analog_supply_voltage: n/a
+  clock_freq_mhz: n/a
+  cell_count: '2'

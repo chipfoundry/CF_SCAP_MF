@@ -1,0 +1,256 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO CF_SCAP_MF
+  CLASS BLOCK ;
+  ORIGIN 0 0 ;
+  FOREIGN CF_SCAP_MF 0 0 ;
+  SIZE 362.35 BY 138.875 ;
+  PIN dyn_cntrl
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.64 121.62 16.825 121.77 ;
+    END
+  END dyn_cntrl
+  PIN vnb_dnwell
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 110.885 16.06 111.13 ;
+    END
+  END vnb_dnwell
+  PIN sc_redc_hv[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.61 116.1 17.815 116.25 ;
+    END
+  END sc_redc_hv[1]
+  PIN sc_redc_hv[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.425 120.24 18.655 120.39 ;
+    END
+  END sc_redc_hv[0]
+  PIN vin_inn
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.8 119.55 18.985 119.7 ;
+    END
+  END vin_inn
+  PIN vref_inp
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.705 118.17 18.89 118.32 ;
+    END
+  END vref_inp
+  PIN vout
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.605 117.48 17.82 117.63 ;
+    END
+  END vout
+  PIN in_n
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.795 118.86 18.98 119.01 ;
+    END
+  END in_n
+  PIN sc_mode_hv[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 19.415 117.825 19.6 117.975 ;
+    END
+  END sc_mode_hv[1]
+  PIN sc_mode_hv[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 19.635 117.135 19.825 117.285 ;
+    END
+  END sc_mode_hv[0]
+  PIN sc_gain_hv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.61 115.755 17.815 115.905 ;
+    END
+  END sc_gain_hv
+  PIN phi2
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.16 116.445 18.4 116.595 ;
+    END
+  END phi2
+  PIN phi1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.64 122.31 16.845 122.46 ;
+    END
+  END phi1
+  PIN phi2d
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.61 116.79 17.88 116.94 ;
+    END
+  END phi2d
+  PIN phi1d
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.64 122.655 16.845 122.805 ;
+    END
+  END phi1d
+  PIN sc_mode_hv[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 20.05 118.515 20.235 118.665 ;
+    END
+  END sc_mode_hv[2]
+  PIN vboost
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 65.26 16.38 65.8 17.38 ;
+    END
+  END vboost
+  PIN vgnd
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met2 ;
+        RECT 16.395 111.875 16.6 112.855 ;
+        RECT 16.395 111.875 21.79 112.855 ;
+      LAYER met3 ;
+        RECT 21.31 111.875 21.79 112.855 ;
+        RECT 1.23 124.375 361.12 127.475 ;
+      LAYER met4 ;
+        RECT 20 0 23.1 138.875 ;
+        RECT 50 0 53.1 138.875 ;
+        RECT 80 0 83.1 138.875 ;
+        RECT 110 0 113.1 138.875 ;
+        RECT 140 0 143.1 138.875 ;
+        RECT 170 0 173.1 138.875 ;
+        RECT 200 0 203.1 138.875 ;
+        RECT 230 0 233.1 138.875 ;
+        RECT 260 0 263.1 138.875 ;
+        RECT 290 0 293.1 138.875 ;
+        RECT 320 0 323.1 138.875 ;
+        RECT 350 0 353.1 138.875 ;
+    END
+  END vgnd
+  PIN vpwr
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met2 ;
+        RECT 16.395 112.995 16.6 113.995 ;
+        RECT 6.31 112.995 16.6 113.995 ;
+      LAYER met3 ;
+        RECT 6.31 112.995 6.79 113.995 ;
+        RECT 1.23 129.175 361.12 132.275 ;
+      LAYER met4 ;
+        RECT 5 0 8.1 138.875 ;
+        RECT 35 0 38.1 138.875 ;
+        RECT 65 0 68.1 138.875 ;
+        RECT 95 0 98.1 138.875 ;
+        RECT 125 0 128.1 138.875 ;
+        RECT 155 0 158.1 138.875 ;
+        RECT 185 0 188.1 138.875 ;
+        RECT 215 0 218.1 138.875 ;
+        RECT 245 0 248.1 138.875 ;
+        RECT 275 0 278.1 138.875 ;
+        RECT 305 0 308.1 138.875 ;
+        RECT 335 0 338.1 138.875 ;
+    END
+  END vpwr
+  PIN sc_gndVref_hv
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.72 119.205 18.905 119.355 ;
+    END
+  END sc_gndVref_hv
+  PIN vfb
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.185 119.895 18.41 120.045 ;
+    END
+  END vfb
+  PIN dft_hv[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.61 115.41 17.835 115.56 ;
+    END
+  END dft_hv[0]
+  PIN dft_hv[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.61 115.065 17.815 115.215 ;
+    END
+  END dft_hv[1]
+  PIN boost_en
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.61 114.72 17.815 114.87 ;
+    END
+  END boost_en
+  OBS
+    LAYER li1 ;
+      RECT 0 0 362.35 138.875 ;
+    LAYER met1 ;
+      RECT 0 0 15 138.875 ;
+      RECT 347.35 0 362.35 138.875 ;
+      RECT 15 0 347.35 15 ;
+      RECT 15 123.875 347.35 138.875 ;
+    LAYER met2 ;
+      RECT 0 0 6.31 110.885 ;
+      RECT 0 111.13 6.31 138.875 ;
+      RECT 6.31 0 15 110.885 ;
+      RECT 6.31 111.13 15 112.995 ;
+      RECT 6.31 113.995 15 138.875 ;
+      RECT 347.35 0 362.35 138.875 ;
+      RECT 15 0 347.35 15 ;
+      RECT 15 123.875 347.35 138.875 ;
+  END
+END CF_SCAP_MF
+
+END LIBRARY

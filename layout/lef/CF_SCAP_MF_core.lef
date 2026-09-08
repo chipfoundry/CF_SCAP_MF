@@ -1,0 +1,312 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+PROPERTYDEFINITIONS
+  MACRO SDLpower STRING ;
+  MACRO SDLground STRING ;
+  MACRO SDLglobal STRING ;
+END PROPERTYDEFINITIONS
+
+MACRO CF_SCAP_MF_core
+  ORIGIN 83.875 -0.04 ;
+  SIZE 332.35 BY 108.875 ;
+  PIN dyn_cntrl
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.64 106.62 1.825 106.77 ;
+    END
+  END dyn_cntrl
+  PIN vnb_dnwell
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 95.885 1.06 96.13 ;
+    END
+  END vnb_dnwell
+  PIN sc_redc_hv[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.61 101.1 2.815 101.25 ;
+    END
+  END sc_redc_hv[1]
+  PIN sc_redc_hv[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.425 105.24 3.655 105.39 ;
+    END
+  END sc_redc_hv[0]
+  PIN vin_inn
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.8 104.55 3.985 104.7 ;
+    END
+  END vin_inn
+  PIN vref_inp
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.705 103.17 3.89 103.32 ;
+    END
+  END vref_inp
+  PIN vout
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.605 102.48 2.82 102.63 ;
+    END
+  END vout
+  PIN in_n
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.795 103.86 3.98 104.01 ;
+    END
+  END in_n
+  PIN sc_mode_hv[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 4.415 102.825 4.6 102.975 ;
+    END
+  END sc_mode_hv[1]
+  PIN sc_mode_hv[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 4.635 102.135 4.825 102.285 ;
+    END
+  END sc_mode_hv[0]
+  PIN sc_gain_hv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.61 100.755 2.815 100.905 ;
+    END
+  END sc_gain_hv
+  PIN phi2
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.16 101.445 3.4 101.595 ;
+    END
+  END phi2
+  PIN phi1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.64 107.31 1.845 107.46 ;
+    END
+  END phi1
+  PIN phi2d
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.61 101.79 2.88 101.94 ;
+    END
+  END phi2d
+  PIN phi1d
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.64 107.655 1.845 107.805 ;
+    END
+  END phi1d
+  PIN sc_mode_hv[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 5.05 103.515 5.235 103.665 ;
+    END
+  END sc_mode_hv[2]
+  PIN vboost
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 50.26 1.38 50.8 2.38 ;
+    END
+  END vboost
+  PIN vgnd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.395 96.875 1.6 97.855 ;
+    END
+  END vgnd
+  PIN vpb
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.395 99.135 1.6 99.365 ;
+    END
+  END vpb
+  PIN vpwr
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.395 97.995 1.6 98.995 ;
+    END
+  END vpwr
+  PIN sc_gndVref_hv
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.72 104.205 3.905 104.355 ;
+    END
+  END sc_gndVref_hv
+  PIN vfb
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.185 104.895 3.41 105.045 ;
+    END
+  END vfb
+  PIN dft_hv[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.61 100.41 2.835 100.56 ;
+    END
+  END dft_hv[0]
+  PIN dft_hv[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.61 100.065 2.815 100.215 ;
+    END
+  END dft_hv[1]
+  PIN boost_en
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.61 99.72 2.815 99.87 ;
+    END
+  END boost_en
+  PROPERTY SDLpower "vpwr" ;
+  PROPERTY SDLground "vgnd" ;
+  PROPERTY SDLglobal "" ;
+  OBS
+    LAYER li1 ;
+      RECT 0 0 332.35 108.875 ;
+    LAYER met1 ;
+      RECT 0 0 332.35 108.875 ;
+    LAYER met2 ;
+      RECT 0 0 0.845 108.875 ;
+      RECT 0.845 0 1.06 95.885 ;
+      RECT 0.845 96.13 1.06 108.875 ;
+      RECT 1.06 0 1.395 108.875 ;
+      RECT 1.395 0 1.6 96.875 ;
+      RECT 1.395 97.855 1.6 97.995 ;
+      RECT 1.395 98.995 1.6 99.135 ;
+      RECT 1.395 99.365 1.6 108.875 ;
+      RECT 1.6 0 1.64 108.875 ;
+      RECT 1.64 0 1.825 106.62 ;
+      RECT 1.64 106.77 1.825 107.31 ;
+      RECT 1.64 107.46 1.825 107.655 ;
+      RECT 1.64 107.805 1.825 108.875 ;
+      RECT 1.825 0 1.845 107.31 ;
+      RECT 1.825 107.46 1.845 107.655 ;
+      RECT 1.825 107.805 1.845 108.875 ;
+      RECT 1.845 0 2.605 108.875 ;
+      RECT 2.605 0 2.61 102.48 ;
+      RECT 2.605 102.63 2.61 108.875 ;
+      RECT 2.61 0 2.815 99.72 ;
+      RECT 2.61 99.87 2.815 100.065 ;
+      RECT 2.61 100.215 2.815 100.41 ;
+      RECT 2.61 100.56 2.815 100.755 ;
+      RECT 2.61 100.905 2.815 101.1 ;
+      RECT 2.61 101.25 2.815 101.79 ;
+      RECT 2.61 101.94 2.815 102.48 ;
+      RECT 2.61 102.63 2.815 108.875 ;
+      RECT 2.815 0 2.82 100.41 ;
+      RECT 2.815 100.56 2.82 101.79 ;
+      RECT 2.815 101.94 2.82 102.48 ;
+      RECT 2.815 102.63 2.82 108.875 ;
+      RECT 2.82 0 2.835 100.41 ;
+      RECT 2.82 100.56 2.835 101.79 ;
+      RECT 2.82 101.94 2.835 108.875 ;
+      RECT 2.835 0 2.88 101.79 ;
+      RECT 2.835 101.94 2.88 108.875 ;
+      RECT 2.88 0 3.16 108.875 ;
+      RECT 3.16 0 3.185 101.445 ;
+      RECT 3.16 101.595 3.185 108.875 ;
+      RECT 3.185 0 3.4 101.445 ;
+      RECT 3.185 101.595 3.4 104.895 ;
+      RECT 3.185 105.045 3.4 108.875 ;
+      RECT 3.4 0 3.41 104.895 ;
+      RECT 3.4 105.045 3.41 108.875 ;
+      RECT 3.41 0 3.425 108.875 ;
+      RECT 3.425 0 3.655 105.24 ;
+      RECT 3.425 105.39 3.655 108.875 ;
+      RECT 3.655 0 3.705 108.875 ;
+      RECT 3.705 0 3.72 103.17 ;
+      RECT 3.705 103.32 3.72 108.875 ;
+      RECT 3.72 0 3.795 103.17 ;
+      RECT 3.72 103.32 3.795 104.205 ;
+      RECT 3.72 104.355 3.795 108.875 ;
+      RECT 3.795 0 3.8 103.17 ;
+      RECT 3.795 103.32 3.8 103.86 ;
+      RECT 3.795 104.01 3.8 104.205 ;
+      RECT 3.795 104.355 3.8 108.875 ;
+      RECT 3.8 0 3.89 103.17 ;
+      RECT 3.8 103.32 3.89 103.86 ;
+      RECT 3.8 104.01 3.89 104.205 ;
+      RECT 3.8 104.355 3.89 104.55 ;
+      RECT 3.8 104.7 3.89 108.875 ;
+      RECT 3.89 0 3.905 103.86 ;
+      RECT 3.89 104.01 3.905 104.205 ;
+      RECT 3.89 104.355 3.905 104.55 ;
+      RECT 3.89 104.7 3.905 108.875 ;
+      RECT 3.905 0 3.98 103.86 ;
+      RECT 3.905 104.01 3.98 104.55 ;
+      RECT 3.905 104.7 3.98 108.875 ;
+      RECT 3.98 0 3.985 104.55 ;
+      RECT 3.98 104.7 3.985 108.875 ;
+      RECT 3.985 0 4.415 108.875 ;
+      RECT 4.415 0 4.6 102.825 ;
+      RECT 4.415 102.975 4.6 108.875 ;
+      RECT 4.6 0 4.635 108.875 ;
+      RECT 4.635 0 4.825 102.135 ;
+      RECT 4.635 102.285 4.825 108.875 ;
+      RECT 4.825 0 5.05 108.875 ;
+      RECT 5.05 0 5.235 103.515 ;
+      RECT 5.05 103.665 5.235 108.875 ;
+      RECT 5.235 0 50.26 108.875 ;
+      RECT 50.26 0 50.8 1.38 ;
+      RECT 50.26 2.38 50.8 108.875 ;
+      RECT 50.8 0 332.35 108.875 ;
+    LAYER met3 ;
+      RECT 0 0 332.35 108.875 ;
+  END
+END CF_SCAP_MF_core
+
+END LIBRARY

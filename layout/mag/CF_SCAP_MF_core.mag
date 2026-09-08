@@ -1,0 +1,84 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 0
+<< metal2 >>
+rect 328 21324 365 21354
+rect 0 19177 212 19226
+rect 522 20220 563 20250
+rect 685 21048 731 21078
+rect 760 20910 797 20940
+rect 741 20634 778 20664
+rect 521 20496 564 20526
+rect 759 20772 796 20802
+rect 883 20565 920 20595
+rect 927 20427 965 20457
+rect 522 20151 563 20181
+rect 632 20289 680 20319
+rect 328 21462 369 21492
+rect 522 20358 576 20388
+rect 328 21531 369 21561
+rect 1010 20703 1047 20733
+rect 10052 276 10160 476
+rect 279 19375 320 19571
+rect 279 19827 320 19873
+rect 279 19599 320 19799
+rect 744 20841 781 20871
+rect 637 20979 682 21009
+rect 522 20082 567 20112
+rect 522 20013 563 20043
+rect 522 19944 563 19974
+<< labels >>
+rlabel metal2 s 328 21324 365 21354 4 dyn_cntrl
+port 1 nsew
+rlabel metal2 s 0 19177 212 19226 4 vnb_dnwell
+port 2 nsew
+rlabel metal2 s 522 20220 563 20250 4 sc_redc_hv[1]
+port 3 nsew
+rlabel metal2 s 685 21048 731 21078 4 sc_redc_hv[0]
+port 4 nsew
+rlabel metal2 s 760 20910 797 20940 4 vin_inn
+port 5 nsew
+rlabel metal2 s 741 20634 778 20664 4 vref_inp
+port 6 nsew
+rlabel metal2 s 521 20496 564 20526 4 vout
+port 7 nsew
+rlabel metal2 s 759 20772 796 20802 4 in_n
+port 8 nsew
+rlabel metal2 s 883 20565 920 20595 4 sc_mode_hv[1]
+port 9 nsew
+rlabel metal2 s 927 20427 965 20457 4 sc_mode_hv[0]
+port 10 nsew
+rlabel metal2 s 522 20151 563 20181 4 sc_gain_hv
+port 11 nsew
+rlabel metal2 s 632 20289 680 20319 4 phi2
+port 12 nsew
+rlabel metal2 s 328 21462 369 21492 4 phi1
+port 13 nsew
+rlabel metal2 s 522 20358 576 20388 4 phi2d
+port 14 nsew
+rlabel metal2 s 328 21531 369 21561 4 phi1d
+port 15 nsew
+rlabel metal2 s 1010 20703 1047 20733 4 sc_mode_hv[2]
+port 16 nsew
+rlabel metal2 s 10052 276 10160 476 4 vboost
+port 17 nsew
+rlabel metal2 s 279 19375 320 19571 4 vgnd
+port 18 nsew
+rlabel metal2 s 279 19827 320 19873 4 vpb
+port 19 nsew
+rlabel metal2 s 279 19599 320 19799 4 vpwr
+port 20 nsew
+rlabel metal2 s 744 20841 781 20871 4 sc_gndVref_hv
+port 21 nsew
+rlabel metal2 s 637 20979 682 21009 4 vfb
+port 22 nsew
+rlabel metal2 s 522 20082 567 20112 4 dft_hv[0]
+port 23 nsew
+rlabel metal2 s 522 20013 563 20043 4 dft_hv[1]
+port 24 nsew
+rlabel metal2 s 522 19944 563 19974 4 boost_en
+port 25 nsew
+<< properties >>
+string FIXED_BBOX 0 0 66470 21775
+<< end >>
