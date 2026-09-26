@@ -7,32 +7,32 @@ timestamp 0
 transform 1 0 3000 0 1 3000
 box 0 0 66470 21775
 << metal2 >>
-rect 3328 24324 3365 24354
-rect 0 22177 3212 22226
-rect 3522 23220 3563 23250
-rect 3685 24048 3731 24078
-rect 3760 23910 3797 23940
-rect 3741 23634 3778 23664
-rect 3521 23496 3564 23526
-rect 3759 23772 3796 23802
-rect 3883 23565 3920 23595
-rect 3927 23427 3965 23457
-rect 3522 23151 3563 23181
-rect 3632 23289 3680 23319
-rect 3328 24462 3369 24492
-rect 3522 23358 3576 23388
-rect 3328 24531 3369 24561
-rect 4010 23703 4047 23733
+rect 3308 24300 3386 24378
+rect 0 22167 3212 22236
+rect 3522 23220 3612 23251
+rect 3685 24048 3775 24079
+rect 3760 23910 3850 23941
+rect 3721 23610 3799 23688
+rect 3504 23473 3582 23551
+rect 3759 23772 3849 23803
+rect 3863 23541 3941 23619
+rect 3907 23403 3985 23481
+rect 3522 23151 3612 23182
+rect 3632 23276 3680 23333
+rect 3328 24462 3418 24493
+rect 3510 23335 3588 23413
+rect 3328 24531 3418 24562
+rect 3990 23679 4068 23757
 rect 13052 3276 13160 3476
 rect 3279 22375 3320 22571
 rect 3279 22375 4358 22571
 rect 3279 22599 3320 22799
 rect 1262 22599 3320 22799
-rect 3744 23841 3781 23871
-rect 3637 23979 3682 24009
-rect 3522 23082 3567 23112
-rect 3522 23013 3563 23043
-rect 3522 22944 3563 22974
+rect 3744 23841 3834 23872
+rect 3637 23979 3727 24010
+rect 3522 23082 3612 23113
+rect 3522 23013 3612 23044
+rect 3522 22944 3612 22975
 << via2 >>
 rect 4290 22453 4330 22493
 rect 1290 22679 1330 22719
@@ -1246,114 +1246,106 @@ rect 55000 0 55620 27775
 rect 61000 0 61620 27775
 rect 67000 0 67620 27775
 << labels >>
-rlabel metal2 s 3328 24324 3365 24354 4 dyn_cntrl
+rlabel metal2 s 3308 24300 3386 24378 4 dyn_cntrl
 port 1 nsew
-rlabel metal2 s 0 22177 3212 22226 4 vnb_dnwell
+rlabel metal2 s 0 22167 3212 22236 4 vnb_dnwell
 port 2 nsew
-rlabel metal2 s 3522 23220 3563 23250 4 sc_redc_hv[1]
+rlabel metal2 s 3522 23220 3612 23251 4 sc_redc_hv[1]
 port 3 nsew
-rlabel metal2 s 3685 24048 3731 24078 4 sc_redc_hv[0]
+rlabel metal2 s 3685 24048 3775 24079 4 sc_redc_hv[0]
 port 4 nsew
-rlabel metal2 s 3760 23910 3797 23940 4 vin_inn
+rlabel metal2 s 3760 23910 3850 23941 4 vin_inn
 port 5 nsew
-rlabel metal2 s 3741 23634 3778 23664 4 vref_inp
+rlabel metal2 s 3721 23610 3799 23688 4 vref_inp
 port 6 nsew
-rlabel metal2 s 3521 23496 3564 23526 4 vout
+rlabel metal2 s 3504 23473 3582 23551 4 vout
 port 7 nsew
-rlabel metal2 s 3759 23772 3796 23802 4 in_n
+rlabel metal2 s 3759 23772 3849 23803 4 in_n
 port 8 nsew
-rlabel metal2 s 3883 23565 3920 23595 4 sc_mode_hv[1]
+rlabel metal2 s 3863 23541 3941 23619 4 sc_mode_hv[1]
 port 9 nsew
-rlabel metal2 s 3927 23427 3965 23457 4 sc_mode_hv[0]
+rlabel metal2 s 3907 23403 3985 23481 4 sc_mode_hv[0]
 port 10 nsew
-rlabel metal2 s 3522 23151 3563 23181 4 sc_gain_hv
+rlabel metal2 s 3522 23151 3612 23182 4 sc_gain_hv
 port 11 nsew
-rlabel metal2 s 3632 23289 3680 23319 4 phi2
+rlabel metal2 s 3632 23276 3680 23333 4 phi2
 port 12 nsew
-rlabel metal2 s 3328 24462 3369 24492 4 phi1
+rlabel metal2 s 3328 24462 3418 24493 4 phi1
 port 13 nsew
-rlabel metal2 s 3522 23358 3576 23388 4 phi2d
+rlabel metal2 s 3510 23335 3588 23413 4 phi2d
 port 14 nsew
-rlabel metal2 s 3328 24531 3369 24561 4 phi1d
+rlabel metal2 s 3328 24531 3418 24562 4 phi1d
 port 15 nsew
-rlabel metal2 s 4010 23703 4047 23733 4 sc_mode_hv[2]
+rlabel metal2 s 3990 23679 4068 23757 4 sc_mode_hv[2]
 port 16 nsew
 rlabel metal2 s 13052 3276 13160 3476 4 vboost
 port 17 nsew
-rlabel metal2 s 3279 22375 3320 22571 4 vgnd
-port 18 nsew
-rlabel metal2 s 3279 22375 4358 22571 4 vgnd
-port 19 nsew
 rlabel metal3 s 4262 22375 4358 22571 4 vgnd
-port 20 nsew
+port 18 nsew
 rlabel metal3 s 246 24875 72224 25495 4 vgnd
-port 21 nsew
+port 19 nsew
 rlabel metal4 s 4000 0 4620 27775 4 vgnd
-port 22 nsew
+port 20 nsew
 rlabel metal4 s 10000 0 10620 27775 4 vgnd
-port 23 nsew
+port 21 nsew
 rlabel metal4 s 16000 0 16620 27775 4 vgnd
-port 24 nsew
+port 22 nsew
 rlabel metal4 s 22000 0 22620 27775 4 vgnd
-port 25 nsew
+port 23 nsew
 rlabel metal4 s 28000 0 28620 27775 4 vgnd
-port 26 nsew
+port 24 nsew
 rlabel metal4 s 34000 0 34620 27775 4 vgnd
-port 27 nsew
+port 25 nsew
 rlabel metal4 s 40000 0 40620 27775 4 vgnd
-port 28 nsew
+port 26 nsew
 rlabel metal4 s 46000 0 46620 27775 4 vgnd
-port 29 nsew
+port 27 nsew
 rlabel metal4 s 52000 0 52620 27775 4 vgnd
-port 30 nsew
+port 28 nsew
 rlabel metal4 s 58000 0 58620 27775 4 vgnd
-port 31 nsew
+port 29 nsew
 rlabel metal4 s 64000 0 64620 27775 4 vgnd
-port 32 nsew
+port 30 nsew
 rlabel metal4 s 70000 0 70620 27775 4 vgnd
-port 33 nsew
-rlabel metal2 s 3279 22599 3320 22799 4 vpwr
-port 34 nsew
-rlabel metal2 s 1262 22599 3320 22799 4 vpwr
-port 35 nsew
+port 31 nsew
 rlabel metal3 s 1262 22599 1358 22799 4 vpwr
-port 36 nsew
+port 32 nsew
 rlabel metal3 s 246 25835 72224 26455 4 vpwr
-port 37 nsew
+port 33 nsew
 rlabel metal4 s 1000 0 1620 27775 4 vpwr
-port 38 nsew
+port 34 nsew
 rlabel metal4 s 7000 0 7620 27775 4 vpwr
-port 39 nsew
+port 35 nsew
 rlabel metal4 s 13000 0 13620 27775 4 vpwr
-port 40 nsew
+port 36 nsew
 rlabel metal4 s 19000 0 19620 27775 4 vpwr
-port 41 nsew
+port 37 nsew
 rlabel metal4 s 25000 0 25620 27775 4 vpwr
-port 42 nsew
+port 38 nsew
 rlabel metal4 s 31000 0 31620 27775 4 vpwr
-port 43 nsew
+port 39 nsew
 rlabel metal4 s 37000 0 37620 27775 4 vpwr
-port 44 nsew
+port 40 nsew
 rlabel metal4 s 43000 0 43620 27775 4 vpwr
-port 45 nsew
+port 41 nsew
 rlabel metal4 s 49000 0 49620 27775 4 vpwr
-port 46 nsew
+port 42 nsew
 rlabel metal4 s 55000 0 55620 27775 4 vpwr
-port 47 nsew
+port 43 nsew
 rlabel metal4 s 61000 0 61620 27775 4 vpwr
-port 48 nsew
+port 44 nsew
 rlabel metal4 s 67000 0 67620 27775 4 vpwr
+port 45 nsew
+rlabel metal2 s 3744 23841 3834 23872 4 sc_gndVref_hv
+port 46 nsew
+rlabel metal2 s 3637 23979 3727 24010 4 vfb
+port 47 nsew
+rlabel metal2 s 3522 23082 3612 23113 4 dft_hv[0]
+port 48 nsew
+rlabel metal2 s 3522 23013 3612 23044 4 dft_hv[1]
 port 49 nsew
-rlabel metal2 s 3744 23841 3781 23871 4 sc_gndVref_hv
+rlabel metal2 s 3522 22944 3612 22975 4 boost_en
 port 50 nsew
-rlabel metal2 s 3637 23979 3682 24009 4 vfb
-port 51 nsew
-rlabel metal2 s 3522 23082 3567 23112 4 dft_hv[0]
-port 52 nsew
-rlabel metal2 s 3522 23013 3563 23043 4 dft_hv[1]
-port 53 nsew
-rlabel metal2 s 3522 22944 3563 22974 4 boost_en
-port 54 nsew
 << properties >>
 string FIXED_BBOX 0 0 72470 27775
 << end >>

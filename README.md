@@ -2,7 +2,7 @@
 
 > Switched-Capacitor Filter/Gain
 
-Draft for designer review. The public GDS is an abstract; ChipFoundry
+The public GDS is an abstract; ChipFoundry
 substitutes protected full geometry at tapeout.
 
 This package ships an SRAM-style PG wrap `CF_SCAP_MF` around analog leaf
@@ -22,14 +22,7 @@ is tied inside the wrap.
 
 ```bash
 pip install cf-ipm
-ipm install CF_SCAP_MF --version 0.2.0 --include-drafts
-```
-
-Until the marketplace listing is published, install from a local catalog
-override:
-
-```bash
-ipm install CF_SCAP_MF --version 0.2.0 --include-drafts --local-file ip/catalog.json
+ipm install CF_SCAP_MF --version 0.2.1
 ```
 
 Use `hdl/gl/CF_SCAP_MF.v` as the customer blackbox, `layout/lef/CF_SCAP_MF.lef`
@@ -38,6 +31,8 @@ public wrap. `CF_SCAP_MF_core` is the analog leaf (empty Verilog, pin-only
 abstract). ChipFoundry substitutes vault GDS into `CF_SCAP_MF_core` at tapeout.
 P&R uses the wrap LEF (`vpwr` / `vgnd` for chip PDN).
 
+Functional sim compiles `verify/beh_model/CF_SCAP_MF_core.v` **instead of** the empty `hdl/gl/CF_SCAP_MF_core.v` stub. See `verify/beh_model/README.md`.
+
 ## Features
 
 - Analog terminals `vin_inn` / `in_n` / `vref_inp` / `vout` / `vfb`
@@ -45,6 +40,7 @@ P&R uses the wrap LEF (`vpwr` / `vgnd` for chip PDN).
 - Non-overlapping clocks `phi1` / `phi2` and delayed clocks `phi1d` / `phi2d`
 - Boost analog supply `vboost` and enable `boost_en` (wrap signal ports)
 - DFT `dft_hv[1:0]` and analog control `dyn_cntrl`
+- Ideal Verilog behavioral model under `verify/beh_model/` for functional sim
 - Customer cell `CF_SCAP_MF` 362.35 × 138.875 µm (15 µm halo around analog leaf 332.35 × 108.875 µm)
 - Chip PDN is `vpwr` / `vgnd`
 
@@ -96,7 +92,14 @@ terminals and `vboost` onto `analog_io`.
 ## Limitations and Open Issues
 
 - Verilog in `hdl/gl/CF_SCAP_MF.v` is a structural wrap around an empty
-  `CF_SCAP_MF_core` blackbox, not a SPICE-accurate model.
+  `CF_SCAP_MF_core` blackbox. Functional sim uses `verify/beh_model/CF_SCAP_MF_core.v` (ideal model, not SPICE).
 - Liberty is not in this first wrap drop. P&R uses the wrap LEF.
 - Companion clock, opamp, and ESD-wrapped tops stay foundry-only. This
   package ships the working switched-capacitor array integration cell.
+
+## Release History
+
+| Version | Date | Notes |
+|---|---|---|
+| 0.2.0 | 2026-09-06 | First SRAM-style PG-wrapped package. |
+| 0.2.1 | 2026-09-26 | Met2 pin metal meets minimum area. Core fill-exclude covers so fillgen does not overwrite the analog. Ideal behavioral model for functional sim. |

@@ -12,7 +12,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 16.64 121.62 16.825 121.77 ;
+        RECT 16.54 121.5 16.93 121.89 ;
     END
   END dyn_cntrl
   PIN vnb_dnwell
@@ -20,7 +20,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 110.885 16.06 111.13 ;
+        RECT 0 110.835 16.06 111.18 ;
     END
   END vnb_dnwell
   PIN sc_redc_hv[1]
@@ -28,7 +28,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 17.61 116.1 17.815 116.25 ;
+        RECT 17.61 116.1 18.06 116.255 ;
     END
   END sc_redc_hv[1]
   PIN sc_redc_hv[0]
@@ -36,7 +36,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 18.425 120.24 18.655 120.39 ;
+        RECT 18.425 120.24 18.875 120.395 ;
     END
   END sc_redc_hv[0]
   PIN vin_inn
@@ -44,7 +44,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 18.8 119.55 18.985 119.7 ;
+        RECT 18.8 119.55 19.25 119.705 ;
     END
   END vin_inn
   PIN vref_inp
@@ -52,7 +52,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 18.705 118.17 18.89 118.32 ;
+        RECT 18.605 118.05 18.995 118.44 ;
     END
   END vref_inp
   PIN vout
@@ -60,7 +60,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 17.605 117.48 17.82 117.63 ;
+        RECT 17.52 117.365 17.91 117.755 ;
     END
   END vout
   PIN in_n
@@ -68,7 +68,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 18.795 118.86 18.98 119.01 ;
+        RECT 18.795 118.86 19.245 119.015 ;
     END
   END in_n
   PIN sc_mode_hv[1]
@@ -76,7 +76,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 19.415 117.825 19.6 117.975 ;
+        RECT 19.315 117.705 19.705 118.095 ;
     END
   END sc_mode_hv[1]
   PIN sc_mode_hv[0]
@@ -84,7 +84,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 19.635 117.135 19.825 117.285 ;
+        RECT 19.535 117.015 19.925 117.405 ;
     END
   END sc_mode_hv[0]
   PIN sc_gain_hv
@@ -92,7 +92,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 17.61 115.755 17.815 115.905 ;
+        RECT 17.61 115.755 18.06 115.91 ;
     END
   END sc_gain_hv
   PIN phi2
@@ -100,7 +100,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 18.16 116.445 18.4 116.595 ;
+        RECT 18.16 116.38 18.4 116.665 ;
     END
   END phi2
   PIN phi1
@@ -108,7 +108,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 16.64 122.31 16.845 122.46 ;
+        RECT 16.64 122.31 17.09 122.465 ;
     END
   END phi1
   PIN phi2d
@@ -116,7 +116,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 17.61 116.79 17.88 116.94 ;
+        RECT 17.55 116.675 17.94 117.065 ;
     END
   END phi2d
   PIN phi1d
@@ -124,7 +124,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 16.64 122.655 16.845 122.805 ;
+        RECT 16.64 122.655 17.09 122.81 ;
     END
   END phi1d
   PIN sc_mode_hv[2]
@@ -132,7 +132,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 20.05 118.515 20.235 118.665 ;
+        RECT 19.95 118.395 20.34 118.785 ;
     END
   END sc_mode_hv[2]
   PIN vboost
@@ -198,7 +198,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 18.72 119.205 18.905 119.355 ;
+        RECT 18.72 119.205 19.17 119.36 ;
     END
   END sc_gndVref_hv
   PIN vfb
@@ -206,7 +206,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 18.185 119.895 18.41 120.045 ;
+        RECT 18.185 119.895 18.635 120.05 ;
     END
   END vfb
   PIN dft_hv[0]
@@ -214,7 +214,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 17.61 115.41 17.835 115.56 ;
+        RECT 17.61 115.41 18.06 115.565 ;
     END
   END dft_hv[0]
   PIN dft_hv[1]
@@ -222,7 +222,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 17.61 115.065 17.815 115.215 ;
+        RECT 17.61 115.065 18.06 115.22 ;
     END
   END dft_hv[1]
   PIN boost_en
@@ -230,7 +230,7 @@ MACRO CF_SCAP_MF
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 17.61 114.72 17.815 114.87 ;
+        RECT 17.61 114.72 18.06 114.875 ;
     END
   END boost_en
   OBS
@@ -242,10 +242,10 @@ MACRO CF_SCAP_MF
       RECT 15 0 347.35 15 ;
       RECT 15 123.875 347.35 138.875 ;
     LAYER met2 ;
-      RECT 0 0 6.31 110.885 ;
-      RECT 0 111.13 6.31 138.875 ;
-      RECT 6.31 0 15 110.885 ;
-      RECT 6.31 111.13 15 112.995 ;
+      RECT 0 0 6.31 110.835 ;
+      RECT 0 111.18 6.31 138.875 ;
+      RECT 6.31 0 15 110.835 ;
+      RECT 6.31 111.18 15 112.995 ;
       RECT 6.31 113.995 15 138.875 ;
       RECT 347.35 0 362.35 138.875 ;
       RECT 15 0 347.35 15 ;
