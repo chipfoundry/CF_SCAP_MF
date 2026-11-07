@@ -22,7 +22,7 @@ is tied inside the wrap.
 
 ```bash
 pip install cf-ipm
-ipm install CF_SCAP_MF --version 0.2.1
+ipm install CF_SCAP_MF --version 0.2.2
 ```
 
 Use `hdl/gl/CF_SCAP_MF.v` as the customer blackbox, `layout/lef/CF_SCAP_MF.lef`
@@ -103,3 +103,4 @@ terminals and `vboost` onto `analog_io`.
 |---|---|---|
 | 0.2.0 | 2026-09-06 | First SRAM-style PG-wrapped package. |
 | 0.2.1 | 2026-09-26 | Met2 pin metal meets minimum area. Core fill-exclude covers so fillgen does not overwrite the analog. Ideal behavioral model for functional sim. |
+| 0.2.2 | 2026-11-07 | Leaf GDS carries wafflefill so pre-merge density passes, and adds the met3 waffleDrop cover. WaffleDrop still keeps chip fill out of the block. |
